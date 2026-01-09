@@ -1,3 +1,12 @@
+import streamlit as st
+import numpy as np
+import joblib
+
+model = joblib.load("rf_liver_model.pkl")
+
+st.set_page_config(page_title="Liver Disease Prediction")
+
+st.title("Liver Disease Prediction System")
 # -----------------------------
 # User Input Section
 # -----------------------------
