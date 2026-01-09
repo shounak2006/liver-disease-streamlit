@@ -31,12 +31,7 @@ sgpt = st.number_input("SGPT", help=NORMAL_RANGES["SGPT / ALT (U/L)"])
 sgot = st.number_input("SGOT", help=NORMAL_RANGES["SGOT / AST (U/L)"])
 alkphos = st.number_input("Alkaline Phosphatase", help=NORMAL_RANGES["Alkaline Phosphatase (U/L)"])
 
-import pandas as pd
 
-with st.expander("Normal Reference Ranges"):
-    st.table(pd.DataFrame(
-        {"Parameter": NORMAL_RANGES.keys(), "Normal Range": NORMAL_RANGES.values()}
-    ))
 
 
 gender_val = 1 if gender == "Male" else 0
