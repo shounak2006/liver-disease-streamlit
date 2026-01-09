@@ -10,6 +10,17 @@ st.title("Liver Disease Prediction System")
 # -----------------------------
 # User Input Section
 # -----------------------------
+NORMAL_RANGES = {
+    "Age (years)": "18–65",
+    "Total Bilirubin (mg/dL)": "0.1–1.2",
+    "Direct Bilirubin (mg/dL)": "0.0–0.3",
+    "Total Proteins (g/dL)": "6.0–8.3",
+    "Albumin (g/dL)": "3.5–5.0",
+    "A/G Ratio": "1.0–2.5",
+    "SGPT / ALT (U/L)": "7–56",
+    "SGOT / AST (U/L)": "10–40",
+    "Alkaline Phosphatase (U/L)": "44–147",
+}
 
 age = st.number_input("Age", min_value=1, max_value=120)
 
